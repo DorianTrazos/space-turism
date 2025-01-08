@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import Menu from '../components/menu/Menu';
+import Header from '../components/header/Header';
 import { BACKGROUNDS } from '../constants/backgrounds';
 import { StyledLayout } from './layout.styles';
 
@@ -10,7 +10,7 @@ const Layout = () => {
 
 	return (
 		<StyledLayout $backgrounds={backgrounds}>
-			<Menu />
+			<Header />
 			<Outlet />
 		</StyledLayout>
 	);

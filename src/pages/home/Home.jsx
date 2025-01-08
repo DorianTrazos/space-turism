@@ -1,7 +1,7 @@
 const Home = () => {
 	return (
 		<>
-			<p>SO, YOU WANT TO TRAVEL TO</p>
+			<span>SO, YOU WANT TO TRAVEL TO</span>
 			<h1>SPACE</h1>
 			<p>
 				Let’s face it; if you want to go to space, you might as well genuinely
