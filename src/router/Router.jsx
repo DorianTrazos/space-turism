@@ -1,16 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
-import About from '../pages/about/About';
+import Layout from '../layouts/Layout';
+import Crew from '../pages/crew/Crew';
+import Destination from '../pages/destination/Destination';
 import Home from '../pages/home/Home';
-import User from '../pages/user/User';
+import Technology from '../pages/technology/Technology';
 
 const Router = () => {
 	return (
 		<Routes>
-			<Route path='/' element={<Home />} />
-			<Route path='/about' element={<About />} />
-			<Route path='/macarena' element={<User name='macarena' />} />
-			<Route path='/xavi' element={<User name='xavi' />} />
-			<Route path='/diego' element={<User name='diego' />} />
+			<Route path='/' element={<Layout />}>
+				<Route index element={<Home />} />
+				<Route path='/destination' element={<Destination />} />
+				<Route path='/crew' element={<Crew />} />
+				<Route path='/technology' element={<Technology />} />
+			</Route>
 		</Routes>
 	);
 };

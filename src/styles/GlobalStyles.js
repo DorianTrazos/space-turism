@@ -25,10 +25,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        font-family: sans-serif;
-        color: aliceblue;
+        font-family: "Barlow Condensed", serif;
         margin: 0;
-        background-color: #333;
+        color: #D0D6F9;
     }
 
 `;
